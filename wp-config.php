@@ -34,7 +34,7 @@ define( 'DB_USER', $mysql_url['necstrasbou_5945'] );
 define( 'DB_PASSWORD', $mysql_url['xxteRuIgmieQJoLZZvyf'] );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', $mysql_url['mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false'] . ":" . $mysql_url['8080'] );
+define( 'DB_HOST', $mysql_url['mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false'] );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
