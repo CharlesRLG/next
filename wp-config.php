@@ -22,7 +22,7 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'SCALINGO_MYSQL_URL' );
+define( 'DB_NAME', '$SCALINGO_MYSQL_URL' );
 
 /** Utilisateur de la base de données MySQL. */
 define( 'DB_USER', 'necstrasbou_5945' );
