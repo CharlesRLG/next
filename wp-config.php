@@ -22,16 +22,16 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'next' );
+define( 'DB_NAME', 'SCALINGO_MYSQL_URL' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'Charles' );
+define( 'DB_USER', 'necstrasbou_5945' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', 'UWcp2lY!a7DjbsrQ' );
+define( 'DB_PASSWORD', 'xxteRuIgmieQJoLZZvyf' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
