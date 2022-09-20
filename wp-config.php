@@ -20,7 +20,7 @@
  * @package WordPress
  */
 
-$mysql_url = parse_url($_ENV["DATABASE_URL"]);
+$mysql_url = parse_url($_ENV["$SCALINGO_MYSQL_URL"]);
 $db = substr($mysql_url['path'], 1);
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
