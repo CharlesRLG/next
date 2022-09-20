@@ -25,7 +25,7 @@ $db = substr($mysql_url['path'], 1);
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-Config::define( 'DB_NAME', '$SCALINGO_MYSQL_URL' );
+Config::define( 'DB_NAME', $SCALINGO_MYSQL_URL );
 
 /** Utilisateur de la base de données MySQL. */
 Config::define( 'DB_USER', $mysql_url['necstrasbou_5945'] );
@@ -34,7 +34,7 @@ Config::define( 'DB_USER', $mysql_url['necstrasbou_5945'] );
 Config::define( 'DB_PASSWORD', $mysql_url['xxteRuIgmieQJoLZZvyf'] );
 
 /** Adresse de l’hébergement MySQL. */
-Config::define( 'DB_HOST', $mysql_url['mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false'] );
+Config::define( 'DB_HOST', $mysql_url['mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false'] . ":" . $mysql_url['8080'] );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
