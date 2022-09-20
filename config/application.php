@@ -18,4 +18,11 @@ Config::define('SECURE_AUTH_SALT', $key);
 Config::define('LOGGED_IN_SALT',   $key);
 Config::define('NONCE_SALT',       $key);
 
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+  $_SERVER['HTTPS'] = 'on';
+
+Config::define('AUTOMATIC_UPDATER_DISABLED', true);
+
+Config::define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+
 ?>
