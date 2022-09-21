@@ -56,14 +56,15 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'ag9z5iu#PY)R%|0v<+PaP0F~gdG%sR-D!J!y0r.r!+(llH4G*9vX2<.S8hEw. z.' );
-define( 'SECURE_AUTH_KEY',  'a)]5vLRGYxR9&bT>?F]yx]S{>T#JVo:E pmr(4)R.jgiJs#]8Y$m.^3P71lEnS{m' );
-define( 'LOGGED_IN_KEY',    'YvwAilGii<oKO4%X,66~l?DcCKDgxaq7gr7J#G,g##mZ2l87g3RF`<n3_6XXUChS' );
-define( 'NONCE_KEY',        'P_8v:6&r}axyKAI+#q[ImD]IRXN<=&5`:Gux_JCy#*s^Z%3$+K-8sqlySoqWb27Y' );
-define( 'AUTH_SALT',        'oG^SmwEN9|w7W:%Dl36oF|d|WD#>.p,]ed=IHdH/]~:!RU2#,s,z)>^4Wt$AdRN4' );
-define( 'SECURE_AUTH_SALT', '+[zmai^Cop5P|C@o5ZUw:mdK^L@54.+~cI{EzN-c#L=O:{[u`5/>.HIa8)(ZgIT$' );
-define( 'LOGGED_IN_SALT',   'c(.Eg6%42aP+~#FQYmQ`.O TEfZ?=fK67Waxzc&_o?h inVI9~n6WdnN#Lh >H(r' );
-define( 'NONCE_SALT',       '%@7G}|ZgnQMC6f `bo$(=x>b}|7@=U[=`uCGWFUGvT7:lro2YawI1<5`k!;dmQbS' );
+$key = $_ENV["SECURE_KEY"];
+Config::define('AUTH_KEY',         $key);
+Config::define('SECURE_AUTH_KEY',  $key);
+Config::define('LOGGED_IN_KEY',    $key);
+Config::define('NONCE_KEY',        $key);
+Config::define('AUTH_SALT',        $key);
+Config::define('SECURE_AUTH_SALT', $key);
+Config::define('LOGGED_IN_SALT',   $key);
+Config::define('NONCE_SALT',       $key);
 /**#@-*/
 
 /**
