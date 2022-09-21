@@ -38,6 +38,9 @@
 // /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 // define( 'DB_CHARSET', 'utf8mb4' );
 
+$mysql_url = parse_url($_ENV["DATABASE_URL"]);
+$db = substr($mysql_url['path'], 1);
+
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
 Config::define('DB_NAME', $SCALINGO_MYSQL_URL);
