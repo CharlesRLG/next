@@ -22,18 +22,35 @@
 
 
 
+// // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
+// /** Nom de la base de données de WordPress. */
+// define( 'DB_NAME', 'next' );
+
+// /** Utilisateur de la base de données MySQL. */
+// define( 'DB_USER', 'Charles' );
+
+// /** Mot de passe de la base de données MySQL. */
+// define( 'DB_PASSWORD', 'Uwcp2lY!a7DjbsrQ' );
+
+// /** Adresse de l’hébergement MySQL. */
+// define( 'DB_HOST', 'localhost' );
+
+// /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
+// define( 'DB_CHARSET', 'utf8mb4' );
+
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', $SCALINGO_MYSQL_URL );
+Config::define('DB_NAME', $SCALINGO_MYSQL_URL);
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', $mysql_url['necstrasbou_5945'] );
+Config::define('DB_USER', $mysql_url['necstrasbou_5945']);
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', $mysql_url['xxteRuIgmieQJoLZZvyf'] );
+Config::define('DB_PASSWORD', $mysql_url['xxteRuIgmieQJoLZZvyf']);
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', $mysql_url['mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false'] );
+Config::define('DB_HOST', $mysql_url['mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false'] . ":" . $mysql_url['8080']);
+
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -55,14 +72,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-// define( 'AUTH_KEY',         'ag9z5iu#PY)R%|0v<+PaP0F~gdG%sR-D!J!y0r.r!+(llH4G*9vX2<.S8hEw. z.' );
-// define( 'SECURE_AUTH_KEY',  'a)]5vLRGYxR9&bT>?F]yx]S{>T#JVo:E pmr(4)R.jgiJs#]8Y$m.^3P71lEnS{m' );
-// define( 'LOGGED_IN_KEY',    'YvwAilGii<oKO4%X,66~l?DcCKDgxaq7gr7J#G,g##mZ2l87g3RF`<n3_6XXUChS' );
-// define( 'NONCE_KEY',        'P_8v:6&r}axyKAI+#q[ImD]IRXN<=&5`:Gux_JCy#*s^Z%3$+K-8sqlySoqWb27Y' );
-// define( 'AUTH_SALT',        'oG^SmwEN9|w7W:%Dl36oF|d|WD#>.p,]ed=IHdH/]~:!RU2#,s,z)>^4Wt$AdRN4' );
-// define( 'SECURE_AUTH_SALT', '+[zmai^Cop5P|C@o5ZUw:mdK^L@54.+~cI{EzN-c#L=O:{[u`5/>.HIa8)(ZgIT$' );
-// define( 'LOGGED_IN_SALT',   'c(.Eg6%42aP+~#FQYmQ`.O TEfZ?=fK67Waxzc&_o?h inVI9~n6WdnN#Lh >H(r' );
-// define( 'NONCE_SALT',       '%@7G}|ZgnQMC6f `bo$(=x>b}|7@=U[=`uCGWFUGvT7:lro2YawI1<5`k!;dmQbS' );
+define( 'AUTH_KEY',         'ag9z5iu#PY)R%|0v<+PaP0F~gdG%sR-D!J!y0r.r!+(llH4G*9vX2<.S8hEw. z.' );
+define( 'SECURE_AUTH_KEY',  'a)]5vLRGYxR9&bT>?F]yx]S{>T#JVo:E pmr(4)R.jgiJs#]8Y$m.^3P71lEnS{m' );
+define( 'LOGGED_IN_KEY',    'YvwAilGii<oKO4%X,66~l?DcCKDgxaq7gr7J#G,g##mZ2l87g3RF`<n3_6XXUChS' );
+define( 'NONCE_KEY',        'P_8v:6&r}axyKAI+#q[ImD]IRXN<=&5`:Gux_JCy#*s^Z%3$+K-8sqlySoqWb27Y' );
+define( 'AUTH_SALT',        'oG^SmwEN9|w7W:%Dl36oF|d|WD#>.p,]ed=IHdH/]~:!RU2#,s,z)>^4Wt$AdRN4' );
+define( 'SECURE_AUTH_SALT', '+[zmai^Cop5P|C@o5ZUw:mdK^L@54.+~cI{EzN-c#L=O:{[u`5/>.HIa8)(ZgIT$' );
+define( 'LOGGED_IN_SALT',   'c(.Eg6%42aP+~#FQYmQ`.O TEfZ?=fK67Waxzc&_o?h inVI9~n6WdnN#Lh >H(r' );
+define( 'NONCE_SALT',       '%@7G}|ZgnQMC6f `bo$(=x>b}|7@=U[=`uCGWFUGvT7:lro2YawI1<5`k!;dmQbS' );
 /**#@-*/
 
 /**
